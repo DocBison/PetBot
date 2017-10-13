@@ -11,4 +11,4 @@ client.on('message', message => {
   }
 });
 
-client.login('368365406223728641');
+client.login(process.env.BOT_TOKEN);

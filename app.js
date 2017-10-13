@@ -47,4 +47,10 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  if (message.content === '@PetBot Command List') {
+    message.reply('Here is the list of commands I can respond to: ```@Petbot``` ```@Petbot How are you today?``` ```@Petbot Wake up!``` ```@Petbot What is the current HA release?``` ```@Petbot SHUT UP!``` ```@Petbot Play my mod``` ```@Petbot You talk too much``` ```@Petbot Command List```');
+  }
+});
+
 client.login(process.env.BOT_TOKEN);

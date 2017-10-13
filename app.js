@@ -53,7 +53,4 @@ client.on('message', message => {
   }
 });
 
-const emoji = guild.emojis.first();
-msg.reply(`Hello! ${emoji}`);
-
 client.login(process.env.BOT_TOKEN);

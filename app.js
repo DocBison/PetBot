@@ -24,14 +24,14 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === '@PetBot What is the current HA release') {
+  if (message.content === '@PetBot What is the current HA release?') {
     message.reply('The current release is Beta 4.7');
   }
 });
 
 client.on('message', message => {
   if (message.content === '@PetBot SHUT UP!') {
-    message.reply('\*sniff* Will do...master');
+    message.reply('*sniff* Will do...master');
   }
 });
 
@@ -42,8 +42,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === '@PetBot You talk to much') {
-    message.reply('Correct');
+  if (message.content === '@PetBot You talk too much') {
+    message.reply('I think *you* talk too much!');
   }
 });
 

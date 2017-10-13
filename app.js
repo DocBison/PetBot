@@ -49,15 +49,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '@PetBot Command List') {
-    message.reply('Here is the list of commands I can respond to: ```@PetBot``` ```@PetBot How are you today?``` ```@PetBot Wake up!``` ```@PetBot What is the current HA release?``` ```@PetBot SHUT UP!``` ```@PetBot Play my mod``` ```@PetBot You talk too much``` ```@PetBot Command List``` ```@PetBot Say [ENTER TEXT HERE]```');
-  }
-});
-
-let args = message.content.split(" ").slice(1);
-
-client.on('message', message => {
-  if (message.content === '@PetBot Say') {
-    message.channel.send(args.join(" "));
+    message.reply('Here is the list of commands I can respond to: ```@PetBot``` ```@PetBot How are you today?``` ```@PetBot Wake up!``` ```@PetBot What is the current HA release?``` ```@PetBot SHUT UP!``` ```@PetBot Play my mod``` ```@PetBot You talk too much``` ```@PetBot Command List```');
   }
 });
 

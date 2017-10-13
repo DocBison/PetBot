@@ -5,6 +5,10 @@ client.on('ready', () => {
   console.log('I am ready!');
 });
 
+client.on('ready', () => {
+  message.channel.sendMessage('I am awake! Now what?');
+});
+
 client.on('message', message => {
   if (message.content === '@PetBot') {
     message.reply('You called?');

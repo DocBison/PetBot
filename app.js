@@ -53,4 +53,9 @@ client.on('message', message => {
   }
 });
 
+client.on('guildMemberAdd', member => {
+  let guild = member.guild;
+  guild.defaultChannel.send(`${member.user} has just joined the server. Welcome!`);     
+});
+
 client.login(process.env.BOT_TOKEN);

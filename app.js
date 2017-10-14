@@ -48,14 +48,69 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === '@PetBot Command List') {
-    message.reply('Here is the list of commands I can respond to: ```@PetBot``` ```@PetBot How are you today?``` ```@PetBot Wake up!``` ```@PetBot What is the current HA release?``` ```@PetBot SHUT UP!``` ```@PetBot Play my mod``` ```@PetBot You talk too much``` ```@PetBot Command List```');
+  if (message.content === '@PetBot Do an impression of a robot') {
+    message.reply('*Beep Boop* I am a robot *Boop Beep*');
   }
 });
 
-client.on('guildMemberAdd', member => {
-  let guild = member.guild;
-  guild.defaultChannel.send(`${member.user} has just joined the server. Welcome!`);     
+client.on('message', message => {
+  if (message.content === '@PetBot, I am your father') {
+    message.reply('NOOOOOOOOOOOOOOOO!');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '@PetBot Hi') {
+    message.reply('Hello');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '@PetBot You suck') {
+    message.reply('*Sniff*');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '@PetBot Can I see your source code') {
+    message.reply('No way! You want to *copy* my source code?');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '@PetBot You are a great bot!') {
+    message.reply('Thanks!');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '@PetBot Who is the best member of Buzz Team?') {
+    message.reply('Colou');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '@PetBot Who is the best member of Donut Team?') {
+    message.reply('Kenny Giles');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '@PetBot Who is the best member of Bagel Team?') {
+    message.reply('Genny Kiles');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '@PetBot What is your favourite mod?') {
+    message.reply('Sunday Drive, made by @Colou#7755');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '@PetBot Command List') {
+    message.reply('Here is the list of commands I can respond to: ```@PetBot``` ```@PetBot How are you today?``` ```@PetBot Wake up!``` ```@PetBot What is the current HA release?``` ```@PetBot SHUT UP!``` ```@PetBot Play my mod``` ```@PetBot You talk too much``` ```@PetBot Command List``` ```@PetBot Do an impression of a robot``` ```@PetBot, I am your father``` ```@PetBot Hi``` ```@PetBot You suck``` ```@PetBot Can I see your source code?``` ```@PetBot You are a great bot!``` ```@PetBot Who is the best member of Buzz Team?``` ```@PetBot Who is the best member of Donut Team?``` ```@PetBot Who is the best member of Bagel Team?``` ```@PetBot What is your favorite mod?```');
+  }
 });
 
 client.login(process.env.BOT_TOKEN);

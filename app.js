@@ -103,7 +103,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '@PetBot What is your favourite mod?') {
-    message.reply('Sunday Drive, made by @Colou#7755');
+    message.reply('Sunday Drive, made by **@Colou**');
   }
 });
 

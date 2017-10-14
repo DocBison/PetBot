@@ -25,7 +25,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '@PetBot What is the current HA release?') {
-    message.reply('The current release is Beta 4.7');
+    message.reply('The current release is Beta 4.8');
   }
 });
 

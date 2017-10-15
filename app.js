@@ -72,7 +72,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === '@PetBot Can I see your source code') {
+  if (message.content === '@PetBot Can I see your source code?') {
     message.reply('No way! You want to *copy* my source code?');
   }
 });

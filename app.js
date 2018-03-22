@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content.match(/@PetBot/i)) {
+  	if (message.content.match(/@PetBot/i))
   		if (message.content.match(/How are you today?/i)
   	{
   	message.reply('Fine, a bit bored. I wish something exciting would happen...');
@@ -59,11 +59,9 @@ client.on('message', message => {
 	{
     	message.reply('Colou');
   	}
-
   		else if (message.content.match(/Who is the best member of Donut Team?/i) {
     	message.reply('Kenny Giles');
   	}
-
   		else if (message.content.match(/Who is the best member of Bagel Team?/i) {
     	message.reply('Genny Kiles');
   	}
@@ -79,5 +77,5 @@ client.on('message', message => {
 	{
 	message.reply('You called?');
   	}
-}
+	return;
 });

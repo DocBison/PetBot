@@ -25,7 +25,7 @@ client.on('message', message => {
 
   else if (message.content.match(/SHUT UP!/i)
   {
-    message.reply('*snelse iff* Will do...master');
+    message.reply('*sniff* Will do...master');
   }
 
   else if (message.content.match(/Play my mod/i)
@@ -52,7 +52,7 @@ client.on('message', message => {
   }
 
   else if (message.content.match(/You suck/i) {
-    message.reply('*Sniff*');
+    message.reply('*sniff*');
   }
 
   else if (message.content.match(/Can I see your source code?/i) {

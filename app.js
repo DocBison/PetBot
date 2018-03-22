@@ -79,3 +79,6 @@ client.on('message', message => {
   	}
 	return;
 });
+
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
